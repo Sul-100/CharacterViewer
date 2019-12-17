@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CharacterDetailsViewController: UIViewController {
     
@@ -24,8 +25,10 @@ class CharacterDetailsViewController: UIViewController {
         loadViewIfNeeded()
         titleLabel.text = character?.text.components(separatedBy: "-").first
         characterDescription.text = character?.text.components(separatedBy: "-").last
-        
-      // characterImage.sd_setImage(with: URL(string: character?.imageURLString ?? ""), completed: nil)
+        // Set the image
+        let url = URL(string: character?.imageURLString ?? "")
+        characterImage.kf.setImage(with: url)
+  
     }
     
     override func viewDidLoad() {
