@@ -12,6 +12,7 @@ struct TopLevelDictionary: Decodable {
 struct Character: Decodable {
     var text: String
     let icon: Icon?
+  
     var imageURLString: String? {
         return icon?.urlString
     }
@@ -29,3 +30,4 @@ struct Icon: Decodable {
         case urlString = "URL"
     }
 }
+

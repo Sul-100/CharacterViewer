@@ -9,10 +9,12 @@
 import Foundation
 
 protocol CharacterViewModelDelegateProtocol: class {
-    func didRecieveData(chararcters:[Character])
+  func didRecieveData(chararcters:[Character], names:[String])
 }
 
 class CharacterHomeViewModel: NSObject {
+  
+  var charactersNames = [String]()
     private let networkManager = NetworkManager.sharedInstance
     weak var delegate: CharacterHomeViewController?
     /**
@@ -25,7 +27,11 @@ class CharacterHomeViewModel: NSObject {
                       do {
                             let jsonDecoder = JSONDecoder()
                             let topLevelDictionary = try jsonDecoder.decode(TopLevelDictionary.self, from: jsonData)
-                            self.delegate?.didRecieveData(chararcters: topLevelDictionary.televisionCharacters)
+                            self.charactersNames = (topLevelDictionary.televisionCharacters).map {
+                              $0.text.components(separatedBy: "-").first ?? ""
+                            }
+                        self.delegate?.didRecieveData(chararcters: topLevelDictionary.televisionCharacters, names: self.charactersNames)
+                            
                       } catch { /* Report the decoding error */ print("can't decode Character json data",error) }
         })
     }

@@ -12,19 +12,25 @@ protocol CellSelectionDelegate: class {
     func cellSelected(with data: Character?)
 }
 
+enum AppType: String { // TODO:- Fix me
+  case wire = "Wire"
+  case simpsons = "Simpsons"
+}
+
 class CharacterHomeViewController: UITableViewController {
     // Mark: Properties
     let viewModel = CharacterHomeViewModel()
     
-    var charactersArray: [Character] = [] {
-           didSet {
-                self.tableView.reloadData()
-           }
-       }
-    
-    
-    weak var delegate: CellSelectionDelegate?
+    var charactersArray = [Character]()
+  
     var filteredData = [String]()
+    weak var delegate: CellSelectionDelegate?
+    var characterNames: [String] = [] {
+          didSet {
+              filteredData = characterNames
+              self.tableView.reloadData()
+          }
+      }
 
      let networkManager = NetworkManager.sharedInstance
     
@@ -34,7 +40,7 @@ class CharacterHomeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+
         // TODO:- set the page title based on the scheme
         switch Config.appType {
         case "Wire": self.title = "Wire"
@@ -45,8 +51,7 @@ class CharacterHomeViewController: UITableViewController {
         
         // Setup the search bar
         setupSearchBar()
-        
-        //filteredData = arrayOfNames
+      
         tableView.delegate = self
         tableView.dataSource = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -62,7 +67,7 @@ class CharacterHomeViewController: UITableViewController {
         searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
     }
-    
+  
 }
 // MARK: - Table view data source
 extension CharacterHomeViewController {
@@ -72,12 +77,12 @@ extension CharacterHomeViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return charactersArray.count
+        return filteredData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = viewModel.getName(from: (charactersArray[indexPath.row].text)) ?? ""
+        cell.textLabel?.text = filteredData[indexPath.row]
         return cell
     }
 }
@@ -99,12 +104,13 @@ extension CharacterHomeViewController {
 // Mark:- SearchBar Delegate Methods
 extension CharacterHomeViewController: UISearchBarDelegate, UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-//         if let searchText = searchController.searchBar.text {
-//               filteredData = searchText.isEmpty ? arrayOfNames : arrayOfNames.filter({(dataString: String) -> Bool in
-//                return dataString.range(of: searchText, options: .caseInsensitive) != nil
-//               })
-//               tableView.reloadData()
-//           }
+
+         if let searchText = searchController.searchBar.text {
+               filteredData = searchText.isEmpty ? characterNames : characterNames.filter({(dataString: String) -> Bool in
+                return dataString.range(of: searchText, options: .caseInsensitive) != nil
+               })
+               tableView.reloadData()
+           }
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -119,9 +125,8 @@ extension CharacterHomeViewController: UISearchBarDelegate, UISearchResultsUpdat
 }
 
 extension CharacterHomeViewController: CharacterViewModelDelegateProtocol {
-    func didRecieveData(chararcters: [Character]) {
-        
+  func didRecieveData(chararcters: [Character], names: [String]) {
         charactersArray = chararcters
-        
+        characterNames  = names
     }
 }

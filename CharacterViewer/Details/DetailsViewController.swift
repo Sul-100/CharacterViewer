@@ -13,6 +13,8 @@ class CharacterDetailsViewController: UIViewController {
     
     @IBOutlet weak var characterDescription: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+  
+    let viewModel = DetailsViewModel()
     
     @IBOutlet weak var characterImage: UIImageView!
     var character: Character? {
@@ -23,12 +25,11 @@ class CharacterDetailsViewController: UIViewController {
     
     func refershUI() {
         loadViewIfNeeded()
-        titleLabel.text = character?.text.components(separatedBy: "-").first
-        characterDescription.text = character?.text.components(separatedBy: "-").last
+        titleLabel.text = viewModel.getCharacterName(from: character?.text ?? "")
+        characterDescription.text = viewModel.getCharacterDescription(from: character?.text ?? "")
         // Set the image
         let url = URL(string: character?.imageURLString ?? "")
         characterImage.kf.setImage(with: url)
-  
     }
     
     override func viewDidLoad() {

@@ -37,6 +37,8 @@
 		B3524EEC23A933210068C0D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; };
 		B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3524F6A23A94DF70068C0D2 /* Kingfisher.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F5B23A94CCB0068C0D2 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3524F7223A95F160068C0D2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3524F7123A95F160068C0D2 /* DetailsViewModel.swift */; };
+		B3524F7C23A95F6F0068C0D2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3524F7123A95F160068C0D2 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +192,7 @@
 		12AA5D9F23A88DB700E16017 /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
 		B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		B3524F7123A95F160068C0D2 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				12AA5D8B23A815EB00E16017 /* DetailsViewController.swift */,
+				B3524F7123A95F160068C0D2 /* DetailsViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -568,6 +572,7 @@
 				12AA5D4D23A7DFA500E16017 /* SceneDelegate.swift in Sources */,
 				12AA5D8C23A815EB00E16017 /* DetailsViewController.swift in Sources */,
 				12AA5DA023A88DB700E16017 /* ImagesManager.swift in Sources */,
+				B3524F7223A95F160068C0D2 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +596,7 @@
 				12AA5D8D23A815EB00E16017 /* DetailsViewController.swift in Sources */,
 				12AA5D7023A8134200E16017 /* SceneDelegate.swift in Sources */,
 				12AA5DA123A88DB700E16017 /* ImagesManager.swift in Sources */,
+				B3524F7C23A95F6F0068C0D2 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
