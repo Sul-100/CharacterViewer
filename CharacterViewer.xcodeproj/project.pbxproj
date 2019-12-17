@@ -120,6 +120,13 @@
 			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
 			remoteInfo = KingfisherTests;
 		};
+		B3524F5223A942830068C0D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = Kingfisher;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -145,16 +152,6 @@
 				B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3524F4C23A940D30068C0D2 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -380,11 +377,11 @@
 				12AA5D7123A8134200E16017 /* Frameworks */,
 				12AA5D7223A8134200E16017 /* Resources */,
 				B3524EEE23A933210068C0D2 /* Embed Frameworks */,
-				B3524F4C23A940D30068C0D2 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B3524F5323A942830068C0D2 /* PBXTargetDependency */,
 			);
 			name = WireViewer;
 			productName = CharacterViewer;
@@ -591,6 +588,11 @@
 			isa = PBXTargetDependency;
 			target = 12AA5D4623A7DFA500E16017 /* SimpsonsViewer */;
 			targetProxy = 12AA5D5E23A7DFA900E16017 /* PBXContainerItemProxy */;
+		};
+		B3524F5323A942830068C0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			targetProxy = B3524F5223A942830068C0D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
