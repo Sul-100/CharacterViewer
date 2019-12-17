@@ -36,10 +36,7 @@
 		B3524EEA23A933150068C0D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3524EEC23A933210068C0D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; };
 		B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3524F4023A9404A0068C0D2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */; };
-		B3524F4123A9404A0068C0D2 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3524F4223A940520068C0D2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */; };
-		B3524F4323A940520068C0D2 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3524F6A23A94DF70068C0D2 /* Kingfisher.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F5B23A94CCB0068C0D2 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,30 +96,37 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		B3524F3A23A9402D0068C0D2 /* PBXContainerItemProxy */ = {
+		B3524F5A23A94CCB0068C0D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+			containerPortal = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
 			remoteInfo = Kingfisher;
 		};
-		B3524F3C23A9402D0068C0D2 /* PBXContainerItemProxy */ = {
+		B3524F5C23A94CCB0068C0D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+			containerPortal = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D1F76072230974DE000C5269;
 			remoteInfo = KingfisherSwiftUI;
 		};
-		B3524F3E23A9402D0068C0D2 /* PBXContainerItemProxy */ = {
+		B3524F5E23A94CCB0068C0D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+			containerPortal = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
 			remoteInfo = KingfisherTests;
 		};
-		B3524F5223A942830068C0D2 /* PBXContainerItemProxy */ = {
+		B3524F6523A94DAC0068C0D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+			containerPortal = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = Kingfisher;
+		};
+		B3524F6723A94DE10068C0D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
 			remoteInfo = Kingfisher;
@@ -136,7 +140,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3524F4123A9404A0068C0D2 /* Kingfisher.framework in Embed Frameworks */,
 				B3524EEA23A933150068C0D2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -148,10 +151,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3524F4323A940520068C0D2 /* Kingfisher.framework in Embed Frameworks */,
 				B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3524F6923A94DE90068C0D2 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3524F6A23A94DF70068C0D2 /* Kingfisher.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -176,7 +189,7 @@
 		12AA5D9B23A825F400E16017 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		12AA5D9F23A88DB700E16017 /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
 		B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3524F4023A9404A0068C0D2 /* Kingfisher.framework in Frameworks */,
 				B3524EE923A933150068C0D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +212,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3524F4223A940520068C0D2 /* Kingfisher.framework in Frameworks */,
 				B3524EEC23A933210068C0D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,10 +222,10 @@
 		12AA5D3E23A7DFA500E16017 = {
 			isa = PBXGroup;
 			children = (
+				B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */,
 				12AA5D4923A7DFA500E16017 /* CharacterViewer */,
 				12AA5D6023A7DFA900E16017 /* CharacterViewerTests */,
 				12AA5D4823A7DFA500E16017 /* Products */,
-				B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */,
 				B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */,
 				12AA5D9723A817FA00E16017 /* wire-Info.plist */,
 				B3524EE823A933150068C0D2 /* Frameworks */,
@@ -320,12 +331,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3524F3523A9402D0068C0D2 /* Products */ = {
+		B3524F5523A94CCB0068C0D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */,
-				B3524F3D23A9402D0068C0D2 /* KingfisherSwiftUI.framework */,
-				B3524F3F23A9402D0068C0D2 /* KingfisherTests.xctest */,
+				B3524F5B23A94CCB0068C0D2 /* Kingfisher.framework */,
+				B3524F5D23A94CCB0068C0D2 /* KingfisherSwiftUI.framework */,
+				B3524F5F23A94CCB0068C0D2 /* KingfisherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B3524F6623A94DAC0068C0D2 /* PBXTargetDependency */,
 			);
 			name = SimpsonsViewer;
 			productName = CharacterViewer;
@@ -377,11 +389,12 @@
 				12AA5D7123A8134200E16017 /* Frameworks */,
 				12AA5D7223A8134200E16017 /* Resources */,
 				B3524EEE23A933210068C0D2 /* Embed Frameworks */,
+				B3524F6923A94DE90068C0D2 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B3524F5323A942830068C0D2 /* PBXTargetDependency */,
+				B3524F6823A94DE10068C0D2 /* PBXTargetDependency */,
 			);
 			name = WireViewer;
 			productName = CharacterViewer;
@@ -424,8 +437,8 @@
 					ProjectRef = B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = B3524F3523A9402D0068C0D2 /* Products */;
-					ProjectRef = B3524F3423A9402D0068C0D2 /* Kingfisher.xcodeproj */;
+					ProductGroup = B3524F5523A94CCB0068C0D2 /* Products */;
+					ProjectRef = B3524F5423A94CCB0068C0D2 /* Kingfisher.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -487,25 +500,25 @@
 			remoteRef = B3524EE623A932BC0068C0D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3524F3B23A9402D0068C0D2 /* Kingfisher.framework */ = {
+		B3524F5B23A94CCB0068C0D2 /* Kingfisher.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Kingfisher.framework;
-			remoteRef = B3524F3A23A9402D0068C0D2 /* PBXContainerItemProxy */;
+			remoteRef = B3524F5A23A94CCB0068C0D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3524F3D23A9402D0068C0D2 /* KingfisherSwiftUI.framework */ = {
+		B3524F5D23A94CCB0068C0D2 /* KingfisherSwiftUI.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = KingfisherSwiftUI.framework;
-			remoteRef = B3524F3C23A9402D0068C0D2 /* PBXContainerItemProxy */;
+			remoteRef = B3524F5C23A94CCB0068C0D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3524F3F23A9402D0068C0D2 /* KingfisherTests.xctest */ = {
+		B3524F5F23A94CCB0068C0D2 /* KingfisherTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = KingfisherTests.xctest;
-			remoteRef = B3524F3E23A9402D0068C0D2 /* PBXContainerItemProxy */;
+			remoteRef = B3524F5E23A94CCB0068C0D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -589,10 +602,15 @@
 			target = 12AA5D4623A7DFA500E16017 /* SimpsonsViewer */;
 			targetProxy = 12AA5D5E23A7DFA900E16017 /* PBXContainerItemProxy */;
 		};
-		B3524F5323A942830068C0D2 /* PBXTargetDependency */ = {
+		B3524F6623A94DAC0068C0D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kingfisher;
-			targetProxy = B3524F5223A942830068C0D2 /* PBXContainerItemProxy */;
+			targetProxy = B3524F6523A94DAC0068C0D2 /* PBXContainerItemProxy */;
+		};
+		B3524F6823A94DE10068C0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			targetProxy = B3524F6723A94DE10068C0D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
