@@ -36,10 +36,6 @@
 		B3524EEA23A933150068C0D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3524EEC23A933210068C0D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; };
 		B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524EDB23A932BC0068C0D2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3524F2B23A93C0D0068C0D2 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F2823A93BF90068C0D2 /* SDWebImage.framework */; };
-		B3524F2C23A93C0D0068C0D2 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F2823A93BF90068C0D2 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3524F2D23A93C150068C0D2 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F2823A93BF90068C0D2 /* SDWebImage.framework */; };
-		B3524F2E23A93C150068C0D2 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3524F2823A93BF90068C0D2 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,27 +95,6 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		B3524F2523A93BF90068C0D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53761325155AD0D5005750A4;
-			remoteInfo = "SDWebImage static";
-		};
-		B3524F2723A93BF90068C0D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4A2CADFF1AB4BB5300B6BC39;
-			remoteInfo = SDWebImage;
-		};
-		B3524F2923A93BF90068C0D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80B6DFEE2142B71600BCB334;
-			remoteInfo = SDWebImageMapKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,7 +104,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3524F2C23A93C0D0068C0D2 /* SDWebImage.framework in Embed Frameworks */,
 				B3524EEA23A933150068C0D2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -141,7 +115,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3524F2E23A93C150068C0D2 /* SDWebImage.framework in Embed Frameworks */,
 				B3524EED23A933210068C0D2 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -169,7 +142,6 @@
 		12AA5D9B23A825F400E16017 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		12AA5D9F23A88DB700E16017 /* ImagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesManager.swift; sourceTree = "<group>"; };
 		B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = SDWebImage/SDWebImage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3524F2B23A93C0D0068C0D2 /* SDWebImage.framework in Frameworks */,
 				B3524EE923A933150068C0D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +164,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3524F2D23A93C150068C0D2 /* SDWebImage.framework in Frameworks */,
 				B3524EEC23A933210068C0D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,7 +177,6 @@
 				12AA5D4923A7DFA500E16017 /* CharacterViewer */,
 				12AA5D6023A7DFA900E16017 /* CharacterViewerTests */,
 				12AA5D4823A7DFA500E16017 /* Products */,
-				B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */,
 				B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */,
 				12AA5D9723A817FA00E16017 /* wire-Info.plist */,
 				B3524EE823A933150068C0D2 /* Frameworks */,
@@ -313,16 +282,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3524F1823A93BF90068C0D2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3524F2623A93BF90068C0D2 /* libSDWebImage.a */,
-				B3524F2823A93BF90068C0D2 /* SDWebImage.framework */,
-				B3524F2A23A93BF90068C0D2 /* SDWebImageMapKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,10 +374,6 @@
 					ProductGroup = B3524ED123A932BC0068C0D2 /* Products */;
 					ProjectRef = B3524ED023A932BC0068C0D2 /* Alamofire.xcodeproj */;
 				},
-				{
-					ProductGroup = B3524F1823A93BF90068C0D2 /* Products */;
-					ProjectRef = B3524F1723A93BF90068C0D2 /* SDWebImage.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -477,27 +432,6 @@
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = B3524EE623A932BC0068C0D2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3524F2623A93BF90068C0D2 /* libSDWebImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDWebImage.a;
-			remoteRef = B3524F2523A93BF90068C0D2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3524F2823A93BF90068C0D2 /* SDWebImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SDWebImage.framework;
-			remoteRef = B3524F2723A93BF90068C0D2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3524F2A23A93BF90068C0D2 /* SDWebImageMapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SDWebImageMapKit.framework;
-			remoteRef = B3524F2923A93BF90068C0D2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

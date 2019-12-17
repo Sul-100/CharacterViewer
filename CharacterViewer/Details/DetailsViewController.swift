@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class CharacterDetailsViewController: UIViewController {
     
@@ -26,7 +25,7 @@ class CharacterDetailsViewController: UIViewController {
         titleLabel.text = character?.text.components(separatedBy: "-").first
         characterDescription.text = character?.text.components(separatedBy: "-").last
         
-        characterImage.sd_setImage(with: URL(string: character?.imageURLString ?? ""), completed: nil)
+      // characterImage.sd_setImage(with: URL(string: character?.imageURLString ?? ""), completed: nil)
     }
     
     override func viewDidLoad() {
