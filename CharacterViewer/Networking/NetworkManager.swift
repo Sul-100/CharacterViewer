@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+
 /// An enum to get the current app from plist file . E.X, Wire, Simpsons
 public enum Config {
     
